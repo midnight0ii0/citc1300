@@ -1,4 +1,4 @@
-CITC 1300 Project Page
+# CITC 1300 Project Page
 <!DOCTYPE html>
 <html lang="en">
 <head>
