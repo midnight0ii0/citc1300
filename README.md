@@ -1,4 +1,4 @@
-CITC 1300-Playstation project
+# CITC 1300-Playstation project
 
 <ul>
 <li><a href="intro_to_html/index.html" target="_blank">Intro to HTMl</a>
