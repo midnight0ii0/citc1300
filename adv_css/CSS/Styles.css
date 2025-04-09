@@ -1,46 +1,116 @@
+/* filepath: C:/Users/nuwnu/OneDrive/Documents/GitHub/citc1300/adv_css/CSS/Styles.css */
 
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-        header, footer {
-            padding: 15px;
-            background-color: #800000; /* Dark red */
-            border-bottom: 3px solid red;
-        }
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 80%;
-            height: auto;
-            border-radius: 10px;
-            border: 3px solid red;
-        }
-        main {
-            max-width: 800px;
-            margin: auto;
-            text-align: left;
-            border-left: 5px solid red;
-            padding-left: 20px;
-        }
-        ul {
-            list-style-type: square;
-            text-align: left;
-        }
-        a {
-            color: red;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        a:hover {
-            color: white;
-        }
-        h1, h2, h3 {
-            color: red;
-        }
-    
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav a {
+    color: #00a2ff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 20px 0;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+main h2, main h3 {
+    color: #e74c3c;
+}
+
+main ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+main ul li {
+    margin: 5px 0;
+}
+
+main a {
+    color: #00a2ff;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Specific Styles for Characters Page */
+.character {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 15px;
+}
+
+.character h2 {
+    color: #e74c3c;
+}
+
+.character p {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav a {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+}
