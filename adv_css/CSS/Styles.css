@@ -1,10 +1,8 @@
-/* filepath: C:/Users/nuwnu/OneDrive/Documents/GitHub/citc1300/adv_css/CSS/Styles.css */
-
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #1e1e1e;
     color: white;
     line-height: 1.6;
@@ -13,20 +11,14 @@ body {
 header {
     background-color: #111;
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
 }
 
 header nav a {
     color: #00a2ff;
     text-decoration: none;
     margin: 0 10px;
-    font-size: 1.2em;
 }
 
 header nav a:hover {
@@ -37,26 +29,26 @@ footer {
     background-color: #111;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     margin-top: 20px;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: #444;
-    margin: 20px 0;
 }
 
 /* Main Content */
 main {
     max-width: 800px;
     margin: 20px auto;
-    padding: 0 20px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-main h2, main h3 {
-    color: #e74c3c;
+main img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 main ul {
@@ -77,40 +69,28 @@ main a:hover {
     text-decoration: underline;
 }
 
-main img {
-    display: block;
+/* Character Page Specific Styles */
+.container {
+    max-width: 800px;
     margin: 20px auto;
-    max-width: 100%;
-    height: auto;
+    padding: 20px;
+    background-color: #2a2a2a;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Specific Styles for Characters Page */
 .character {
-    margin-bottom: 30px;
-    border-bottom: 1px solid #444;
-    padding-bottom: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .character h2 {
-    color: #e74c3c;
+    color: #00a2ff;
 }
 
 .character p {
     margin: 10px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    header nav a {
-        font-size: 1em;
-    }
-
-    main {
-        padding: 0 10px;
-    }
 }
