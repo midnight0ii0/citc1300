@@ -6,65 +6,42 @@
     <title>God of War 2018 Characters</title>
     <style>
         body {
-            background-color: #1e1e1e;
-            color: white;
             font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 80%;
-            height: auto;
-        }
-        section {
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #ffcc00;
-        }
-        footer {
-            margin-top: 20px;
+            background-color: #1e1e1e;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
         }
         header {
             background-color: #333;
-            padding: 10px 0;
+            padding: 20px;
+            text-align: center;
         }
         header h1 {
             margin: 0;
+            color: #e63946;
         }
-        header nav {
-            margin-top: 10px;
-        }
-        header nav a {
-            text-decoration: none;
-            color: #ffcc00;
-        }
-        header nav a:hover {
-            text-decoration: underline;
-        }
-        main {
+        .character {
+            display: flex;
+            align-items: center;
+            margin: 20px;
             padding: 20px;
-        }
-        section h2 {
-            color: #00a2ff;
-        }
-        section p {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        section img {
-            border: 2px solid #00a2ff;
+            background-color: #444;
             border-radius: 10px;
         }
-        footer p {
-            margin: 0;
+        .character img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
         }
-        footer {
-            background-color: #333;
-            padding: 10px 0;
-            color: #ffcc00;
+        .character h2 {
+            margin: 0;
+            color: #f1faee;
+        }
+        .character p {
+            margin: 5px 0 0;
+            color: #a8dadc;
         }
     </style>
 </head>
@@ -72,43 +49,31 @@
     <header>
         <h1>God of War 2018 Characters</h1>
         <nav>
-            <a href="index.html">Home</a></li>
+            <a href="index.html">Home</a>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Kratos</h2>
-            <img src="https://via.placeholder.com/400x300" alt="Kratos">
-            <p>Kratos, the Ghost of Sparta, is the main protagonist of the God of War series. In the 2018 game, he embarks on a journey with his son, Atreus, to fulfill his late wife's final wish.</p>
-        </section>
-        <section>
-            <h2>Atreus</h2>
-            <img src="https://via.placeholder.com/400x300" alt="Atreus">
-            <p>Atreus is the son of Kratos and Faye. He is a curious and intelligent boy who learns about his heritage and the world around him during their journey.</p>
-        </section>
-        <section>
-            <h2>Baldur</h2>
-            <img src="https://via.placeholder.com/400x300" alt="Baldur">
-            <p>Baldur is a Norse god and the main antagonist of God of War 2018. He is invulnerable to all forms of harm, which becomes a central theme in the story.</p>
-        </section>
-        <section>
-            <h2>Freya</h2>
-            <img src="https://via.placeholder.com/400x300" alt="Freya">
-            <p>Freya is a Vanir goddess and a key ally to Kratos and Atreus. She is a powerful sorceress with a tragic past that ties her to Baldur.</p>
-        </section>
-        <section>
-            <h2>Mimir</h2>
-            <img src="https://via.placeholder.com/400x300" alt="Mimir">
-            <p>Mimir, known as the smartest man alive, is a key companion in the game. He provides wisdom and guidance to Kratos and Atreus throughout their journey.</p>
-        </section>
-        <section>
-            <h2>The World Serpent (Jörmungandr)</h2>
-            <img src="https://via.placeholder.com/400x300" alt="The World Serpent">
-            <p>The World Serpent is a massive, ancient creature who aids Kratos and Atreus. He speaks in an ancient tongue and has a mysterious connection to their journey.</p>
-        </section>
+        <div class="character">
+            <img src="https://example.com/kratos.jpg" alt="Kratos">
+            <div>
+                <h2>Kratos</h2>
+                <p>The main protagonist, a Spartan warrior and the God of War.</p>
+            </div>
+        </div>
+        <div class="character">
+            <img src="https://example.com/atreus.jpg" alt="Atreus">
+            <div>
+                <h2>Atreus</h2>
+                <p>Kratos' son, a curious and brave young boy.</p>
+            </div>
+        </div>
+        <div class="character">
+            <img src="https://example.com/freya.jpg" alt="Freya">
+            <div>
+                <h2>Freya</h2>
+                <p>A Vanir goddess and ally to Kratos and Atreus.</p>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2023 God of War Fan Page</p>
-    </footer>
 </body>
 </html>
