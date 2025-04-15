@@ -28,19 +28,23 @@
         }
         .character {
             display: flex;
+            flex-direction: column;
             align-items: center;
             margin-bottom: 20px;
+            text-align: center;
         }
         .character img {
             width: 150px;
             height: auto;
-            margin-right: 20px;
+            margin-bottom: 10px;
         }
         .character h2 {
             margin: 0 0 10px;
         }
         .character p {
             margin: 0;
+            font-size: 1.1em;
+            line-height: 1.6;
         }
         footer {
             text-align: center;
@@ -76,12 +80,9 @@
                 display: block;
                 margin: 5px 0;
             }
-            .character {
-                flex-direction: column;
-                align-items: flex-start;
-            }
             .character img {
-                margin-bottom: 10px;
+                width: 100%;
+                max-width: 300px;
             }
         }
         @media (max-width: 400px) {
@@ -100,7 +101,7 @@
                 font-size: 1.2em;
             }
         }
-        </style>
+    </style>
 </head>
 <body>
     <header>
@@ -114,21 +115,21 @@
             <img src="Images/kratos.jpg" alt="Kratos">
             <div>
                 <h2>Kratos</h2>
-                <p>The main protagonist, a Spartan warrior and the God of War.</p>
+                <p>The main protagonist, a Spartan warrior and the God of War. Once a servant of the Greek gods, Kratos now seeks redemption and a new life in the Norse realm, where he faces new challenges and enemies.</p>
             </div>
         </div>
         <div class="character">
             <img src="Images/Atreus.jpg" alt="Atreus">
             <div>
                 <h2>Atreus</h2>
-                <p>Kratos' son, a curious and brave young boy.</p>
+                <p>Kratos' son, a curious and brave young boy. Atreus is eager to prove himself to his father and learn about his mysterious heritage, while also grappling with his own identity and destiny.</p>
             </div>
         </div>
         <div class="character">
             <img src="Images/Freya.jpg" alt="Freya">
             <div>
                 <h2>Freya</h2>
-                <p>A Vanir goddess and ally to Kratos and Atreus.</p>
+                <p>A Vanir goddess and ally to Kratos and Atreus. Freya is a powerful sorceress and former queen of the Valkyries, who aids the duo on their journey while harboring her own tragic past and secrets.</p>
             </div>
         </div>
     </main>
