@@ -23,6 +23,11 @@
         margin: 0 15px;
         text-decoration: none;
         }
+        nav a:not(:last-child)::after {
+        content: "|";
+        margin-left: 15px;
+        color: white;
+        }
         main {
         padding: 20px;
         }
@@ -68,6 +73,9 @@
         nav a {
             display: block;
             margin: 5px 0;
+        }
+        nav a:not(:last-child)::after {
+            content: "";
         }
         main {
             padding: 10px;
