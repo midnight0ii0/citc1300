@@ -4,7 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Story of Kratos</title>
-    <link rel="stylesheet" href="Styles.CSS">
+    <link rel="stylesheet" href="CSSs/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+        h1, h2 {
+            margin: 0 0 10px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #e2e2e2;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.2em;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            main {
+                padding: 10px;
+            }
+        }
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            p, li {
+                font-size: 0.9em;
+            }
+        }
+        @media (max-width: 300px) {
+            h1 {
+                font-size: 1.2em;
+            }
+            h2 {
+                font-size: 1em;
+            }
+            p, li {
+                font-size: 0.8em;
+            }
+        }
+        .character {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -36,8 +142,8 @@
         <a href="https://godofwar.playstation.com/">Official God of War Page</a>
         
         <h2>Images of Kratos</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/God_of_War_PS4_Kratos_and_Atreus.jpg/800px-God_of_War_PS4_Kratos_and_Atreus.jpg" alt="Kratos and Atreus">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/God_of_War_%282018%29_-_Troll_Battle.jpg/800px-God_of_War_%282018%29_-_Troll_Battle.jpg" alt="Kratos Fighting a Troll">
+        <img src="Images/kratos.jpg" alt="Kratos">
+        <img src="Images/KT.jpg" alt="Kratos Fighting a Troll">
     </main>
     <footer>
         <p>&copy; 2025 Kratos Fan Page. All rights reserved.</p>
