@@ -2,12 +2,108 @@
 <head>
   <meta charset="UTF-8">
   <title>Media - Teen Wolf</title>
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="images/favicon_io/favicon-32x32.png" type="image/x-icon">
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #808080; /* Gray background */
+      color: #111; /* Darker font color */
+    }
+    header {
+      background-color: #111; /* Darker black background */
+      color: #f0f0f0; /* Lighter gray text */
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #f0f0f0; /* Lighter gray text for links */
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    main {
+      padding: 20px;
+    }
+    video {
+      display: block;
+      margin: 0 auto;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #111; /* Darker black background */
+      color: #f0f0f0; /* Lighter gray text */
+    }
+    h1, h2 {
+      margin: 0;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1em;
+      line-height: 1.5;
+      color: #000; /* Darker black font for paragraphs */
+    }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .video-container video {
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+    }
+    .video-container h2 {
+      margin-top: 20px;
+    }
+    .video-container p {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #111; /* Darker black font for video description */
+    }
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.2em;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      main {
+        padding: 10px;
+      }
+      video {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @media (max-width: 400px) {
+      header {
+        font-size: 1em;
+      }
+      nav a {
+        margin: 5px 0;
+      }
+      main {
+        padding: 5px;
+      }
+    }
+  </style>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <header>
-    <h1>Teen Wolf Media</h1>
+    <h1>Teen Wolf Trailer</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -18,9 +114,12 @@
   </header>
   <main>
     <video controls width="640">
-      <source src="media/TeenWolf.mp4" type="video/mp4">
-      
+      <source src="media/Teenwolf.mp4" type="video/mp4">
     </video>
+    <div class="video-container">
+      <h2>Teen Wolf Trailer</h2>
+      <p>Watch the official trailer for Teen Wolf, a thrilling series that combines supernatural elements with high school drama.</p>
+    </div>
   </main>
 </body>
 </html>
