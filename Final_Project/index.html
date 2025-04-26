@@ -5,114 +5,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Teen Wolf Fan Website">
   <link rel="icon" href="images/favicon_io/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="styles/style.css">
   <title>Teen Wolf Fan Site</title>
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #333;
-        color: #ccc;
-    }
-    header {
-        background-color: #000; /* Changed to black */
-        color: #ccc;
-        padding: 10px 0;
-        text-align: center;
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    color: #ccc;
+  }
+  header {
+    background-color: #000;
+    color: #e1dbdb;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Added spacing between nav buttons */
+  }
+  nav ul li {
+    margin: 5px 10px;
+  }
+  nav ul li a {
+    color: #e6e3e3;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #444;
+    border-radius: 5px;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .hero {
+    background-image: url('./images/hero.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: #eeeaea;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  article {
+    background-color: #444;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #ccc;
+  }
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000;
+    color: #ccc;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+  }
+  h1, h2, h3 {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2em;
+    color: #ccc;
+  }
+  h2 {
+    font-size: 1.5em;
+    color: rgb(248, 248, 248);
+  }
+  h3 {
+    font-size: 1.2em;
+    color: rgb(249, 246, 246);
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #ccc;
+  }
+  img {
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+  }
+  @media (max-width: 1024px) {
+    .hero {
+      height: 250px;
+      padding-top: 80px;
     }
     nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
+      flex-wrap: wrap;
     }
     nav ul li {
-        margin: 0 15px;
-    }
-    nav ul li a {
-        color: #ccc;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    nav ul li a:hover {
-        text-decoration: underline;
-    }
-    .hero {
-        background-image: url('./images/hero.jpg');
-        height: 300px;
-        background-size: cover;
-        background-position: center;
-        color: #ccc;
-        text-align: center;
-        padding-top: 100px;
+      margin: 5px;
     }
     .columns {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px;
+      flex-direction: column;
+      align-items: center;
     }
     article {
-        background-color: #444;
-        padding: 20px;
-        margin: 10px;
-        flex: 1 1 calc(30% - 20px);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        color: #ccc;
-    }
-    footer {
-        text-align: center;
-        padding: 10px 0;
-        background-color: #444;
-        color: #ccc;
-    }
-    h1, h2, h3 {
-        margin: 0;
-    }
-    h1 {
-        font-size: 2em;
-        color: #ccc;
-    }
-    h2 {
-        font-size: 1.5em;
-        color: rgb(248, 248, 248);
-    }
-    h3 {
-        font-size: 1.2em;
-        color: rgb(249, 246, 246); /* Changed to red */
-    }
-    p {
-        font-size: 1em;
-        line-height: 1.5;
-        color: #ccc;
+      flex: 1 1 80%;
+      margin-bottom: 20px;
     }
     img {
-        width: 70%;
-        height: auto;
-        margin: 20px auto;
-        display: block;
-        border-radius: 8px;
+      width: 85%;
     }
-    @media (max-width: 768px) {
-        .hero {
-            height: 200px;
-            padding-top: 50px;
-        }
-        .columns {
-            flex-direction: column;
-            align-items: center;
-        }
-        article {
-            flex: 1 1 80%;
-            margin-bottom: 20px;
-        }
-        img {
-            width: 90%;
-        }
+  }
+  @media (max-width: 768px) {
+    .hero {
+      height: 200px;
+      padding-top: 50px;
     }
+    
+    nav ul li {
+      margin: 5px 0;
+    }
+    .columns {
+      flex-direction: column;
+      align-items: center;
+    }
+    article {
+      flex: 1 1 90%;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 90%;
+    }
+  }
 </style>
 </head>
 <body>
@@ -132,12 +165,10 @@
   <main>
     <section class="hero">
       <h2>Welcome to the Teen Wolf Universe</h2>
-    <p>A fan-made site dedicated to the hit series Teen Wolf. Explore character info, media, images, and more.</p>
-    <p>Dive into the supernatural world of Beacon Hills, where werewolves, banshees, and other mythical creatures come to life. Stay updated with the latest news, fan theories, and exclusive content.</p>
-    <p>Join our community of fans to celebrate the legacy of Teen Wolf and share your favorite moments, theories, and fan art.</p>
+    <p>A fan-made site dedicated to the hit series Teen Wolf. Explore character info, media, images, and more. Dive into the supernatural world of Beacon Hills, where werewolves, banshees, and other mythical creatures come to life. Stay updated with the latest news, fan theories, and exclusive content. Join our community of fans to celebrate the legacy of Teen Wolf and share your favorite moments, theories, and fan art.</p>
     </section>
 
-    <section class="colum</section>ns">
+    <section class="columns">
       <article>
         <h3>Latest News</h3>
         <a href="https://teenwolf.fandom.com/wiki/Teen_Wolf_News" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 15px; background-color: #555; color: #ccc; text-decoration: none; border-radius: 5px;">Read More</a>

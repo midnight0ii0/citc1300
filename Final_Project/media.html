@@ -3,103 +3,142 @@
   <meta charset="UTF-8">
   <title>Media - Teen Wolf</title>
   <link rel="icon" href="images/favicon_io/favicon-32x32.png" type="image/x-icon">
- <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #808080; /* Gray background */
-      color: #111; /* Darker font color */
-    }
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #808080; /* Gray background */
+    color: #111; /* Darker font color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header {
+    background-color: #111; /* Darker black background */
+    color: #f0f0f0; /* Lighter gray text */
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    color: #f0f0f0; /* Lighter gray text for links */
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px; /* Add padding for the gray box */
+    background-color: #7d7b7b; /* Gray background for the box */
+    border-radius: 5px; /* Rounded corners for the box */
+    display: inline-block; /* Ensure the box wraps around the text */
+  }
+  nav a:hover {
+    background-color: #5e5e5e; /* Darker gray on hover */
+  }
+  main {
+    padding: 80px 20px 20px; /* Reduced padding to move content up */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7d7b7b; /* White background for the box */
+    border: 1px solid #111; /* Dark border for the box */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .video-container video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border: 2px solid #111; /* Dark border around the video */
+    border-radius: 10px; /* Rounded corners for the video */
+  }
+  .video-container h2 {
+    margin-top: 20px;
+  }
+  .video-container p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #111; /* Darker black font for video description */
+  }
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the footer box */
+    border: 1px solid #000; /* Black border for the footer box */
+  }
+  footer p {
+    color: #f9eaea; /* White text for copyright words */
+  }
+  h1, h2 {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000; /* Darker black font for paragraphs */
+  }
+  @media (max-width: 600px) {
     header {
-      background-color: #111; /* Darker black background */
-      color: #f0f0f0; /* Lighter gray text */
-      padding: 10px 0;
-      text-align: center;
-    }
-    nav {
-      margin-top: 10px;
+      font-size: 1.2em;
     }
     nav a {
-      color: #f0f0f0; /* Lighter gray text for links */
-      text-decoration: none;
-      margin: 0 15px;
+      display: block;
+      margin: 10px 0;
     }
     main {
-      padding: 20px;
-    }
-    video {
-      display: block;
-      margin: 0 auto;
-    }
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background-color: #111; /* Darker black background */
-      color: #f0f0f0; /* Lighter gray text */
-    }
-    h1, h2 {
-      margin: 0;
-    }
-    h1 {
-      font-size: 2em;
-    }
-    h2 {
-      font-size: 1.5em;
-    }
-    p {
-      font-size: 1em;
-      line-height: 1.5;
-      color: #000; /* Darker black font for paragraphs */
+      padding: 90px 10px 10px; /* Adjust padding for smaller screens */
     }
     .video-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      padding: 10px;
     }
-    .video-container video {
+    video {
       width: 100%;
-      max-width: 640px;
       height: auto;
     }
-    .video-container h2 {
-      margin-top: 20px;
-    }
-    .video-container p {
-      margin-top: 10px;
+  }
+  @media (max-width: 400px) {
+    header {
       font-size: 1em;
-      color: #111; /* Darker black font for video description */
     }
-    @media (max-width: 600px) {
-      header {
-        font-size: 1.2em;
-      }
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-      main {
-        padding: 10px;
-      }
-      video {
-        width: 100%;
-        height: auto;
-      }
+    nav a {
+      margin: 5px 0;
     }
-    @media (max-width: 400px) {
-      header {
-        font-size: 1em;
-      }
-      nav a {
-        margin: 5px 0;
-      }
-      main {
-        padding: 5px;
-      }
+    main {
+      padding: 80px 5px 5px; /* Adjust padding for very small screens */
     }
-  </style>
-  <link rel="stylesheet" href="styles/style.css">
+    .video-container {
+      padding: 5px;
+    }
+  }
+</style>
+<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <header>
@@ -118,8 +157,11 @@
     </video>
     <div class="video-container">
       <h2>Teen Wolf Trailer</h2>
-      <p>Watch the official trailer for Teen Wolf, a thrilling series that combines supernatural elements with high school drama.</p>
+      <p>Watch the official trailer for Teen Wolf, a thrilling series that combines supernatural elements.</p>
     </div>
   </main>
+  <footer>
+    <p>&copy; 2025 Teen Wolf Fan Site | Designed with love by a fan.</p>
+  </footer>
 </body>
 </html>
